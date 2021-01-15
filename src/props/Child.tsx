@@ -2,7 +2,7 @@ interface ChildProps {
   color: string;
 }
 
-const Child = ({ color }: ChildProps) => {
+export const Child = ({ color }: ChildProps) => {
   return (
     <div>
       <h1>{color}</h1>
@@ -10,4 +10,10 @@ const Child = ({ color }: ChildProps) => {
   );
 };
 
-export default Child;
+export const ChildAsFC: React.FC<ChildProps> = ({ color }) => {
+  return (
+    <div>
+      <h1>{color}</h1>
+    </div>
+  );
+};
