@@ -1,9 +1,11 @@
-import React from 'react';
+interface ChildProps {
+  color: string;
+}
 
-const Child = () => {
+const Child = ({ color }: ChildProps) => {
   return (
     <div>
-      <h1>Child</h1>
+      <h1>{color}</h1>
     </div>
   );
 };
