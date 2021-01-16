@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import EventComponent from './events/EventComponent';
+import UserSearchRef from './refs/UserSearchRef';
 import GuestList from './state/GuestList';
 import UserSearch from './state/UserSearch';
 
@@ -11,6 +12,7 @@ const App = () => {
       <GuestList />
       <UserSearch />
       <EventComponent />
+      <UserSearchRef />
     </div>
   );
 };
